@@ -1,7 +1,7 @@
 package org.tty.leet_code
 
 /**
- * 532:: K-diff Pairs in an Array
+ * 532:: K-diff Pairs in an Array (Normal)
  *
  * Given an array of integer `nums` and an integer `k`, return the numbers of unique k-diff pairs in the array.
  *
