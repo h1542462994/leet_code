@@ -1,7 +1,7 @@
 package org.tty.leet_code
 
 /**
- * 719:: Find K-th Smallest Pair Distance
+ * 719:: Find K-th Smallest Pair Distance (Normal)
  *
  * The **distance of a pair** of integers `a` and `b` is defined as the absolute difference between a and b.
  * Given an integer array `nums` and an integer `k`, return the `k^th` smallest distance among all the pairs `nums[i]` and `num[j]` where `0 <= i < j < nums.length`
@@ -124,7 +124,7 @@ class Solution719V2 {
      *
      * O(num * log_n)
      */
-    private fun List<Int>.binarySearch(start: Int, endInclusive: Int, targetIndex: Int): Int {
+    private tailrec fun List<Int>.binarySearch(start: Int, endInclusive: Int, targetIndex: Int): Int {
         return if (start == endInclusive) {
             start
         } else {
