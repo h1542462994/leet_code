@@ -1,31 +1,8 @@
 package org.tty.leet_code
 
-class Node(var `val`: Int) {
-    var next: Node? = null
-}
+// File import: Common.kt
 
-/**
- * fast to create a testcase.
- */
-fun createCircleLinkedListNode(input: List<Int>): Node? {
-    if (input.isEmpty()) {
-        return null
-    } else {
-        var head: Node? = null
-        var cur: Node? = null
-        input.forEach {
-            val node = Node(it)
-            if (head == null) {
-                head = node
-            }
 
-            cur?.next = node
-            cur = node
-        }
-        cur!!.next = head
-        return head
-    }
-}
 
 /**
  * external iterable function for test.

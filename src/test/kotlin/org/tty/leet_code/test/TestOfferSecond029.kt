@@ -2,7 +2,6 @@ package org.tty.leet_code.test
 
 import org.junit.jupiter.api.Test
 import org.tty.leet_code.SolutionOfferSecond029
-import org.tty.leet_code.createCircleLinkedListNode
 import org.tty.leet_code.iterable
 import kotlin.test.assertEquals
 
@@ -10,7 +9,7 @@ class TestOfferSecond029 {
 
     private fun useTestCase(expect: List<Int>, input: List<Int>, insertVal: Int) {
         val solution = SolutionOfferSecond029()
-        var node = createCircleLinkedListNode(input)
+        var node = Interact.createCircleLinkedListNode(input)
         node = solution.insert(node, insertVal)
         val list = node.iterable().toList()
         println(list)

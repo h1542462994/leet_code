@@ -2,10 +2,7 @@ package org.tty.leet_code
 
 import kotlin.math.max
 
-class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
+// File Import: Common.kt
 
 /**
  * 508:: Most Frequent Subtree Sum
