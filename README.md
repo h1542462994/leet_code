@@ -10,3 +10,4 @@
 6. 2022/6/21 (Easy) 每日一题：1108. Defanging an IP Address. [代码](./src/main/kotlin/org/tty/leet_code/Solution1108.kt)
 7. 2022/6/21 (Difficult) 每日一题：715 (2022/6/20的题) . Range Module. [代码](./src/main/kotlin/org/tty/leet_code/Solution715.kt)
 8. 2022/6/22 (Normal) 每日一题：513. Find Bottom Left Tree Value. [代码](./src/main/kotlin/org/tty/leet_code/Solution513.kt)
+9. 2022/6/23 (Difficult) 每日一题：20 Substring with concatenation of All Words. [代码](./src/main/kotlin/org/tty/leet_code/Solution30.kt)
