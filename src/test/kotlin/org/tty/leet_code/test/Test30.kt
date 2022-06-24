@@ -1,13 +1,12 @@
 package org.tty.leet_code.test
 
 import org.junit.jupiter.api.Test
-import org.tty.leet_code.Solution30
 import org.tty.leet_code.Solution30V2
 
 class Test30 {
     @Test
     fun test30() {
-        val solution = Solution30()
+        val solution = Solution30V2()
         val s = "barfoothefoobarman"
         val words = arrayOf("foo", "bar")
         println(solution.findSubstring(s, words))
