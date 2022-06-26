@@ -90,3 +90,48 @@ class Solution710(n: Int, blackList: IntArray) {
         return randomSource + ranges[index].offset
     }
 }
+
+/**
+ * **Solution:**
+ * create a hashmap from blackNumber in [0, n - m) to whiteNumber in [n - m, m)
+ *
+ * **Result:**
+ * - time: 1132ms 100% 这个时间比上面的慢?
+ * - memory: 64.5MB 100%
+ */
+class Solution710V2(n: Int, blackList: IntArray) {
+    private val realN: Int
+    private val blackToWhiteMap = mutableMapOf<Int, Int>()
+
+    companion object {
+        const val INT_INIT = 0
+    }
+
+    init {
+        realN = n - blackList.size
+        val beforeRange = 0 until realN
+        val afterRange = realN until n
+
+        // scan blackList and create map. f
+        for (blackNumber in blackList) {
+            if (blackNumber in beforeRange) {
+                blackToWhiteMap[blackNumber] = INT_INIT
+            }
+        }
+
+        val entryIterator = blackToWhiteMap.entries.iterator()
+        // scan afterRange, for all whiteNumber, set map. r
+        for (number in afterRange) {
+            if (number !in blackList) {
+                entryIterator.next().setValue(number)
+            }
+        }
+
+        require(!entryIterator.hasNext())
+    }
+
+    fun pick(): Int {
+        val randomSource = Random.nextInt(realN)
+        return blackToWhiteMap[randomSource] ?: randomSource
+    }
+}

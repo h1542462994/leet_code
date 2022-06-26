@@ -2,13 +2,14 @@ package org.tty.leet_code.test
 
 import org.junit.jupiter.api.Test
 import org.tty.leet_code.Solution710
+import org.tty.leet_code.Solution710V2
 
 class Test710 {
     @Test
     fun test710() {
         val n = 7
         val blackList = intArrayOf(2, 3, 5)
-        val solution = Solution710(n, blackList)
+        val solution = Solution710V2(n, blackList)
 
         val count = 100000
         val resultMap = mutableMapOf<Int, Int>()
