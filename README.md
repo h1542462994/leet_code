@@ -14,3 +14,5 @@
 10. 2022/6/24 (Normal) 每日一题：515. Find Largest Values in Each Tree Row. [代码](./src/main/kotlin/org/tty/leet_code/Solution515.kt)
 11. 2022/6/25 (Normal) 每日一题：剑指Offset Ⅱ 091. [代码](./src/main/kotlin/org/tty/leet_code/SolutionOfferSecond091.kt)
 12. 2022/6/26 (Difficult) 每日一题：710. Random Pick with Blacklist. [代码](./src/main/kotlin/org/tty/leet_code/Solution710.kt)
+13. 2022/6/27 (Normal) 每日一题：522. Longest Uncommon Subsequence II. [代码](./src/main/kotlin/org/tty/leet_code/Solution522.kt)
+14. 2022/6/28 (Normal?Difficult!) 每日一题：324. Wiggle Sort II [代码](./src/main/kotlin/org/tty/leet_code/Solution324.kt)
