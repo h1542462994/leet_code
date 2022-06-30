@@ -16,3 +16,5 @@
 12. 2022/6/26 (Difficult) 每日一题：710. Random Pick with Blacklist. [代码](./src/main/kotlin/org/tty/leet_code/Solution710.kt)
 13. 2022/6/27 (Normal) 每日一题：522. Longest Uncommon Subsequence II. [代码](./src/main/kotlin/org/tty/leet_code/Solution522.kt)
 14. 2022/6/28 (Normal?Difficult!) 每日一题：324. Wiggle Sort II [代码](./src/main/kotlin/org/tty/leet_code/Solution324.kt)
+15. 2022/6/29 (Normal) 每日一题：535. Encode and Decode TinyURL [代码](./src/main/kotlin/org/tty/leet_code/Solution535.kt)
+16. 2022/6/30 (Normal) 每日一题：1175. Prime Arrangements [代码](./src/main/kotlin/org/tty/leet_code/Solution1175.kt)
