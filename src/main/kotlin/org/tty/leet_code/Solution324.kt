@@ -17,6 +17,7 @@ import kotlin.random.Random
  *
  * **Result:**
  * - error
+ * - at 2022/9/28
  */
 class Solution324 {
     fun swap(arr: IntArray, i: Int, j: Int) {

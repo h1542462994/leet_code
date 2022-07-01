@@ -18,3 +18,4 @@
 14. 2022/6/28 (Normal?Difficult!) 每日一题：324. Wiggle Sort II [代码](./src/main/kotlin/org/tty/leet_code/Solution324.kt)
 15. 2022/6/29 (Normal) 每日一题：535. Encode and Decode TinyURL [代码](./src/main/kotlin/org/tty/leet_code/Solution535.kt)
 16. 2022/6/30 (Normal) 每日一题：1175. Prime Arrangements [代码](./src/main/kotlin/org/tty/leet_code/Solution1175.kt)
+17. 2022/7/1 (Normal) 每日一题：241. Different Ways to Add Parentheses [代码](./src/main/kotlin/org/tty/leet_code/Solution241.kt)

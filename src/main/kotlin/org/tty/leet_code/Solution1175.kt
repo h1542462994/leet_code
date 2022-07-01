@@ -14,6 +14,7 @@ package org.tty.leet_code
  * **Result: **
  * - time 132ms 100%
  * - memory 32.3MB 100.0%
+ * - at 2022/6/30
  */
 class Solution1175 {
     companion object {
@@ -21,7 +22,7 @@ class Solution1175 {
     }
 
     fun numPrimeArrangements(n: Int): Int {
-        // use primeFilter to calculate the prime count 埃氏筛
+        // use primeFilter to calculate the prime count 线性筛
         // 0 .. n
         val primes: BooleanArray = BooleanArray(n + 1) { true }
         for (i in 2 .. n) {
@@ -50,6 +51,7 @@ class Solution1175 {
             a = b
             b = t
         }
+
         var result = 1L
         var num = 1L
         for (i in 1 .. b) {
