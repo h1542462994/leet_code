@@ -7,7 +7,7 @@ class Test241 {
     @Test
     fun test241() {
         val solution = Solution241()
-        val result = solution.diffWaysToCompute("2*3-4*5")
+        val result = solution.diffWaysToCompute("1*2+3*4*5*6+7*8+9+10+11")
         println(result)
     }
 }

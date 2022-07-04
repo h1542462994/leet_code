@@ -15,6 +15,8 @@ import kotlin.math.absoluteValue
  * **Solution: **
  * - use hashCode to storage the recorded urls if conflicted, find it by inner index.
  * - hashCode is encoded to base62 shortString, + and / is not included.
+ * - time complexity: O(2^n)
+ * - space complexity: O(2^n)
  *
  * **Result: **
  * - time 200ms 100.00%
