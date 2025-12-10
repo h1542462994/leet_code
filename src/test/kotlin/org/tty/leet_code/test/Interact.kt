@@ -1,5 +1,6 @@
 package org.tty.leet_code.test
 
+import org.tty.leet_code.ListNode
 import org.tty.leet_code.Node
 import org.tty.leet_code.TreeNode
 
@@ -65,6 +66,25 @@ object Interact {
                 cur = node
             }
             cur!!.next = head
+            return head
+        }
+    }
+
+    fun createLinkedListNode(input: List<Int>): ListNode? {
+        if (input.isEmpty()) {
+            return null
+        } else {
+            var head: ListNode? = null
+            var cur: ListNode? = null
+            input.forEach {
+                val node = ListNode(it)
+                if (head == null) {
+                    head = node
+                }
+
+                cur?.next = node
+                cur = node
+            }
             return head
         }
     }

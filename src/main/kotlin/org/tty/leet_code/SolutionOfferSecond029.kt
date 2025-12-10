@@ -4,24 +4,7 @@ package org.tty.leet_code
 
 
 
-/**
- * external iterable function for test.
- */
-fun Node?.iterable(): Iterable<Int> {
-    return Iterable {
-        iterator {
-            if (this@iterable != null) {
-                val head: Node = this@iterable
-                var cur: Node = head
-                while (cur.next != head) {
-                    yield(cur.`val`)
-                    cur = cur.next!!
-                }
-                yield(cur.`val`)
-            }
-        }
-    }
-}
+
 
 /**
  * OfferSecond029:: insert into a sorted circular linked list.
