@@ -54,3 +54,51 @@ fun ListNode?.listIterable(): Iterable<Int> {
         }
     }
 }
+
+fun TreeNode?.preIterable(): Iterable<Int> {
+    return Iterable {
+        iterator {
+            if (this@preIterable == null) {
+                return@iterator
+            }
+
+            val deque = ArrayDeque<TreeNode>()
+            deque.add(this@preIterable)
+
+            while (deque.isNotEmpty()) {
+                val cur = deque.removeFirst()
+                yield(cur.`val`)
+                if (cur.left != null) {
+                    deque.add(cur.left!!)
+                }
+                if (cur.right != null) {
+                    deque.add(cur.right!!)
+                }
+            }
+
+        }
+    }
+}
+
+fun TreeNode?.structIterable(): Iterable<Int?> {
+    return Iterable {
+        iterator {
+            if (this@structIterable == null) {
+                return@iterator
+            }
+
+            val deque = ArrayDeque<TreeNode?>()
+            deque.add(this@structIterable)
+
+            while (deque.isNotEmpty()) {
+                val cur = deque.removeFirst()
+                yield(cur?.`val`)
+
+                if (cur != null) {
+                    deque.add(cur.left)
+                    deque.add(cur.right)
+                }
+            }
+        }
+    }
+}
