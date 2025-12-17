@@ -1,7 +1,7 @@
 package org.tty.leet_code.test
 
 import org.tty.leet_code.Solution114
-import org.tty.leet_code.flatIterable
+import org.tty.leet_code.structIterable
 import kotlin.test.Test
 
 class Test114 {
@@ -12,6 +12,6 @@ class Test114 {
         val solution = Solution114()
         solution.flatten(node)
 
-        println(node.flatIterable().toList())
+        println(node.structIterable().toList())
     }
 }
